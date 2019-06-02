@@ -19,7 +19,7 @@ const users = new mongoose.Schema({
 });
 
 const capabilities = {
-  admin: ['create','read','update','delete'],
+  admin: ['create','read','update', 'delete', 'superuser'],
   editor: ['create', 'read', 'update'],
   user: ['read'],
 };
@@ -95,7 +95,7 @@ users.methods.generateToken = function(type) {
 
 users.methods.can = function(capability) {
   return capabilities[this.role].includes(capability);
-};
+}; 
 
 users.methods.generateKey = function() {
   return this.generateToken('key');

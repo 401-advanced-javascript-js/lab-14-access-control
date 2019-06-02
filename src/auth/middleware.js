@@ -8,7 +8,7 @@ module.exports = (capability) => {
 
     try {
       let [authType, authString] = req.headers.authorization.split(/\s+/);
-
+      
       switch (authType.toLowerCase()) {
       case 'basic':
         return _authBasic(authString);
