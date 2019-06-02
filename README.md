@@ -6,42 +6,34 @@
 ### Author: Jagdeep Singh
 
 ### Links and Resources
-* [submission PR](http://xyz.com) 
-* [travis](http://xyz.com) 
-* [back-end](http://xyz.com) (when applicable) 
-* [front-end](http://xyz.com) (when applicable) 
+* [submission PR](https://github.com/401-advanced-javascript-js/lab-14-access-control/pull/1) 
+* [travis](https://www.travis-ci.com/401-advanced-javascript-js/lab-14-access-control) 
+<!-- * [back-end](http://xyz.com)  -->
+<!-- * [front-end](http://xyz.com) (when applicable)  -->
 
-#### Documentation
+<!-- #### Documentation
 * [api docs](http://xyz.com) (API servers)
-* [jsdoc](http://xyz.com) (Server assignments)
-* [styleguide](http://xyz.com) (React assignments)
-
-### Modules
-#### `modulename.js`
-##### Exported Values and Methods
-
-###### `foo(thing) -> string`
-Usage Notes or examples
-
-###### `bar(array) -> array`
-Usage Notes or examples
+* [jsdoc](http://xyz.com) (Server assignments) -->
 
 ### Setup
 #### `.env` requirements
 * `PORT` - Port Number
 * `MONGODB_URI` - URL to the running mongo instance/db
+* `API_URL` - URL of deployed app
+* `GOOGLE_CLIENT_ID` - Client ID from registering app with google
+* `GOOGLE_CLIENT_SECRET` - Client Secret from registering app with google
+* `SECRET` - Random unique string used for encoding
+* `TOKEN_LIFETIME` - Expire time for token
+* `SINGLE_USE_TOKENS` - 
 
 #### Running the app
 * `npm start`
-* Endpoint: `/foo/bar/`
-  * Returns a JSON object with abc in it.
-* Endpoint: `/bing/zing/`
-  * Returns a JSON object with xyz in it.
   
 #### Tests
 * How do you run tests?
-* What assertions were made?
-* What assertions need to be / should be made?
+
+  `npm test`
 
 #### UML
-Link to an image of the UML for your application and response to events
+
+![UML](./assets/uml.jpeg)
